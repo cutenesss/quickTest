@@ -1,37 +1,37 @@
 const img = [
     {
-        src:require('./assets/1.png'),
+        src:require('./assets/1.jpeg'),
         txt:"Tiến độ dự án",
         num:'15'
     },
     {
-        src:require('./assets/2.png'),
+        src:require('./assets/2.jpg'),
         txt:'Toàn cảnh',
         num:'12'
     },
     { 
-        src:require('./assets/3.png'),
+        src:require('./assets/3.jpg'),
         txt:'Hệ thống an ninh',
         num:'35'
     }
 ];
 
 const img2 = [
-    require('./assets/all/1.png'),
-    require('./assets/all/2.png'),
-    require('./assets/all/3.png'),
-    require('./assets/all/4.png'),
-    require('./assets/all/5.png'),
-    require('./assets/all/6.png'),
-    require('./assets/all/7.png'),
-    require('./assets/all/8.png'),
-    require('./assets/all/9.png'),
+    require('./assets/all/1.jpeg'),
+    require('./assets/all/2.jpg'),
+    require('./assets/all/3.jpg'),
+    require('./assets/all/4.jpg'),
+    require('./assets/all/5.jpg'),
+    require('./assets/all/6.jpg'),
+    require('./assets/all/7.jpg'),
+    require('./assets/all/8.jpg'),
+    require('./assets/all/9.jpg'),
     require('./assets/all/10.png'),
-    require('./assets/all/11.png'),
-    require('./assets/all/12.png'),
-    require('./assets/all/13.png'),
-    require('./assets/all/14.png'),
-    require('./assets/all/15.png'),
+    require('./assets/all/11.jpg'),
+    require('./assets/all/12.jpg'),
+    require('./assets/all/13.jpg'),
+    require('./assets/all/14.jpg'),
+    require('./assets/all/15.jpg'),
 ];
 
 const doc = [
