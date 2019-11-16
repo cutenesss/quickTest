@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import {
     View,
     Text,
@@ -24,7 +24,7 @@ class CustomTabBar extends Component {
         const textColor = isTabActive ? 'white' : 'black';
         const backgroundColor = isTabActive ? '#ff6161' : 'white';
         return <Button
-            style={{flex: 1, height: 40, backgroundColor, borderRadius: 14}}
+            style={styles.btn}
             key={name}
             accessible={true}
             accessibilityLabel={name}
@@ -32,7 +32,7 @@ class CustomTabBar extends Component {
             onPress={() => onPressHandler(page)}
         >
             <View style={[styles.tab]}>
-                <Text style={[{color: textColor, },]}>
+                <Text style={[{ color: textColor, },]}>
                     {name}
                 </Text>
             </View>
@@ -42,7 +42,7 @@ class CustomTabBar extends Component {
     render() {
         return (
             <View style={styles.tabBarBox}>
-                <View style={ {flexDirection: 'row',width:200, marginLeft: 20}}>
+                <View style={styles.view}>
                     {this.props.tabs.map((name, page) => {
                         const isTabActive = this.props.activeTab === page;
                         const renderTab = this.props.renderTab || this.renderTab;
@@ -57,11 +57,22 @@ class CustomTabBar extends Component {
 
 export default CustomTabBar;
 const styles = StyleSheet.create({
+    btn: {
+        flex: 1,
+        height: 40,
+        backgroundColor,
+        borderRadius: 14
+    },
     tabBarBox: {
         height: 50,
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: 'white',
+    },
+    view: {
+        flexDirection: 'row',
+        width: 200,
+        marginLeft: 20
     },
     iconBox: {
         margin: 15
